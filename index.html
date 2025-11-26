@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*  Ini adalah internal Css */
+    
+        header {
+            background-color: rgb(231, 200, 140);
+            text-align: center;
+            padding: 15px 0;
+            color: white;
+        }
+
+        nav {
+            background-color: bisque;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration : bisque;
+            color:rgb(157, 153, 153);
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 5px 0;
+            height: 600px;
+            color:bisque;
+            background-color:rgb(153, 153, 153);
+            text-shadow: 2px 2px 10px #000;
+            background: url("beauty_model.PNG")
+            no-repeat center center/cover;
+            align-items:center;
+            justify-content: center;
+            display: flex;
+            font-size: 30px;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service {
+            flex: 1;
+            min-width: 250px;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba (0,0,0.1)
+        }
+
+        .service h3{
+            color:rgb(223, 104, 124);
+        }
+
+        form{
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        input,
+        textarea {
+            width : 98%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button{
+            background: #046eaf;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor : pointer ;
+        }
+
+        button:hover {
+            background:#a90390;
+        }
+
+        footer{
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+
+        gallery {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .gallery img {
+        width: 297px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.3);
+        transition: transform 0.3s;
+    }
+
+    .gallery img:hover {
+        transform:scale(1.2);
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang Di PT Nazla Beauty</h1>
+        <p>Kami pastikan setiap tetes produk Nazla Beauty memberikan hasil yang nyata dan yang pastinya aman.Temukan koleksi lengkap produk kami dan biarkan kecantikan alami anda bersinar tanpa batas</p>
+    </header>
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section class="hero" id="beranda">
+        <h1>Selamat Datang di Website Kami</h1>
+    </section>
+    
+    <section class="container" id="tentang">
+        <h2 style="text-align: center;">Tentang Kami</h2>
+        <p style="text-align: center; margin-bottom: 20px;">
+            Berikut adalah gambaran mengenai PT Nazla Beauty.
+        </p>
+
+        <div class="gallery">
+            <img src="SKINCARE1.PNG"Foto 1>
+            <img src="https://images.unsplash.com/photo-1762760625095-a8401a4206ed?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Foto 2">
+            <img src="SKINCARE2.PNG" alt="Foto 3">
+            <img src="SKINCARE3.PNG" alt="Foto 4">
+        </div>
+    </section>
+
+
+    <section class="container" id="layanan">
+        <h2 style="text-align: center;">Layanan Kami</h2>
+        <div class="services">
+            <div class="service">
+                <h3>Perawatan Wajah</h3>
+                <p>Facial Glow, Acne Treatment, Whitening, Peeling & Lifting</p>
+            </div>
+            <div class="service">
+                <h3>Perawatan Tubuh</h3>
+                <p>Body Spa, Lulur, Slimming & Body Whitening Treatment</p>
+            </div>
+            <div class="service">
+                <h3>Perawatan Rambut</h3>
+                <p>Hair Spa, Creambath, Hair Mask, Hair Coloring & Treatment Rontok</p>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="kontak">
+        <h2 style="text-align: center">Hubungi Kami</h2>
+        <form action="">
+            <label>Nama</label>
+            <input type="text" placeholder="Masukan Nama Anda"/>
+            <label>Email</label>
+            <input type="email" placeholder="Masukan Email Anda"/>
+             <label>Product</label>
+            <input type="text" placeholder="Mau beli yang mana CEPETTT!!!"/>
+            <label>Pesan
+                <textarea rows="5" placeholder="Tulis pesan anda disini"></textarea>
+                <button type="Submit">Kirim</button>
+                <button type="Submit">Engga ya</button>
+            </label>
+        </form>
+    </section>
+
+    <footer>
+        <a href="#beranda"style="color: white; text-decoration: none;">
+            <p> &copy; Copyright 😜🤸‍♀️🆖🆗 2025 PT Doa Ibu </p>
+        </a>
+    </footer>
+</body>
+</html>
